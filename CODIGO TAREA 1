@@ -1,0 +1,16 @@
+numero_decimal = int(input()) # este es el numero que queremos convertir a binario
+
+módulos = [] # la lista para guardar los módulos
+
+while numero_decimal != 0: # mientras el numero de entrada sea diferente de cero
+    # paso 1: dividimos entre 2
+    modulo = numero_decimal % 2
+    cociente = numero_decimal // 2
+    modulos.append(modulo) # guardamos el modulo calculado
+    numero_decimal = cociente # el cociente pasa a ser el numero de entrada
+
+imprimir (módulos)
+
+print("¿Cómo se llama?")
+nombre = entrada()
+print(f"Me alegro de conocerle, {nombre}")
